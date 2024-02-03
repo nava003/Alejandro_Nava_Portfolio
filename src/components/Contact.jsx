@@ -13,46 +13,57 @@ function Contact() {
     const inputName = target.name;
     const inputValue = target.value;
 
-    if (inputName === 'full-name') {
-      setFormData({
-        ...formData,
-        name: inputValue
-      });
-    } else if (inputName === 'email') {
-      setFormData({
-        ...formData,
-        email: inputValue
-      });
-    } else if (inputName === 'phone') {
-      setFormData({
-        ...formData,
-        phone: inputValue
-      })
-    } else {
-      setFormData({
-        ...formData,
-        message: inputValue
-      })
-    }
+    setFormData({
+      ...formData,
+      [inputName]: inputValue
+    })
   }
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    
+    const contactForm = e.target;
+    const formData = new FormData(contactForm);
 
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => console.log("Form Success"))
+    .catch((error) => console.log(error));
 
+    setFormData({
+      ...formData,
+      [contactForm.name]: ''
+    })
   }
   
   return (
     <div id="contact-container">
       <h1>Contact Me</h1>
       <p>Phone: 262-455-0448 (Do Leave A Message!)</p>
-      <form id="contact-form" name="contact-form" onSubmit={handleSubmit}>
-        <input name="full-name" type="text" value={formData.name} placeholder="name"/>
-        <input name="email" type="email" value={formData.email} placeholder="email@mail.com"/>
-        <input name="phone" type="tel" value={formData.phone} placeholder="###-###-####"/>
-        <textarea name="message" rows="5" cols="40" value={formData.message} placeholder="message"></textarea>
+      <form id="contact-form" name="contact-form" method="POST" netlify onSubmit={handleSubmit}>
+        <input
+          name="full-name" type="text"
+          value={formData.name} onChange={handleInputChange}
+          placeholder="name"
+        />
+        <input
+          name="email" type="email"
+          value={formData.email} onChange={handleInputChange}
+          placeholder="email@mail.com"
+        />
+        <input
+          name="phone" type="tel"
+          value={formData.phone} onChange={handleInputChange}
+          placeholder="###-###-####"
+        />
+        <textarea
+          name="message" rows="5" cols="40"
+          value={formData.message} onChange={handleInputChange}
+          placeholder="message">
+        </textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
