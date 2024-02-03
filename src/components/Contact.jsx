@@ -25,10 +25,12 @@ function Contact() {
     const contactForm = e.target;
     const formData = new FormData(contactForm);
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+    fetch('/', {
+      method: 'POST',
+      //headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      //body: new URLSearchParams(formData).toString(),
+      headers: { 'Content-Type': 'multipart/form-data' },
+      body: formData
     })
     .then(() => console.log("Form Success"))
     .catch((error) => console.log(error));
@@ -43,7 +45,7 @@ function Contact() {
     <div id="contact-container">
       <h1>Contact Me</h1>
       <p>Phone: 262-455-0448 (Do Leave A Message!)</p>
-      <form id="contact-form" name="contact-form" method="POST" netlify onSubmit={handleSubmit}>
+      <form id="contact-form" name="contact-form" netlify onSubmit={handleSubmit}>
         <input
           name="full-name" type="text"
           value={formData.name} onChange={handleInputChange}
