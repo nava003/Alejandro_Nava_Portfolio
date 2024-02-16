@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <div id="about-container">
+    <div id="about" className="about-container">
       <h1>Alejandro D. Nava</h1>
       <img src="" alt="Photo of me, Alejandro"/>
       

@@ -42,7 +42,7 @@ function Contact() {
   }
   
   return (
-    <div id="contact-container">
+    <div id="contact" className="contact-container">
       <h1>Contact Me</h1>
       <p>Phone: 262-455-0448 (Do Leave A Message!)</p>
       <form id="contact-form" name="contact-form" netlify onSubmit={handleSubmit}>
