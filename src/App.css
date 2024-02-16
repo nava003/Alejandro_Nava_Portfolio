@@ -1,3 +1,8 @@
+/* The Page Style CSS File */
+html {
+  background-color:rgb(230, 230, 230);
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -10,6 +15,10 @@ nav img {
   margin: 10px 0 0 18px;
   padding: 3px;
   width: 50px;
-  background-color: rgba(136, 136, 136, 0.5);
+  background-color: rgba(136, 136, 136, 0.3);
   border-radius: 30%;
+}
+
+nav img:hover {
+  background-color: rgb(80, 80, 80);
 }
