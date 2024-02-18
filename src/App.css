@@ -11,12 +11,24 @@ nav {
   flex-direction: column;
 }
 
+nav a {
+  margin: 15px 0 0 15px;
+  border-radius: 30%;
+}
+
 nav img {
-  margin: 10px 0 0 18px;
-  padding: 3px;
+  display: block;
+  padding: 6px;
   width: 50px;
   background-color: rgba(136, 136, 136, 0.3);
   border-radius: 30%;
+}
+
+nav a:last-child {
+  position: fixed;
+  margin: 0 15px 15px 0;
+  bottom: 0;
+  right: 0;
 }
 
 nav img:hover {
