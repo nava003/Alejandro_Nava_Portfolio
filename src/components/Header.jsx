@@ -41,27 +41,6 @@ function Header() {
     }
 
     setInterval(draw, 30);
-
-
-    // const headerContainer = document.querySelector('.header-container');
-    // let n = 0;
-    // let headConWidth = headerContainer.clientWidth;
-    // let i = 0;
-    // let value;
-    // while (n < 20) {
-    //   let divColumn = document.createElement('div');
-    //   let dColWidth = divColumn.clientWidth;
-    //   divColumn.className =`column col-${++n}`;
-    //   i = 0;
-    //   while (i < 20) {
-    //     ++i;
-    //     value = Math.floor(Math.random() * 255) + 10240;
-    //     let newSpan = document.createElement('span');
-    //     newSpan.innerHTML = `&#${value};`;
-    //     divColumn.appendChild(newSpan);
-    //   }
-    //   headerContainer.appendChild(divColumn);
-    // }
   }, []);
 
   return (
