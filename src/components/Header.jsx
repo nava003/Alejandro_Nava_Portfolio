@@ -1,7 +1,75 @@
+import { useEffect } from "react";
+
 function Header() {
+  useEffect(() => {
+    const canvas = document.getElementById('brailleMatrix');
+    const context = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const fontSize = 16;
+    const columns = canvas.width/fontSize;
+
+    const brailleUnicode = [];
+    for (let i = 0; i < 100; i++) {
+      brailleUnicode[i] = String.fromCharCode(0x2800 + Math.random() * (0x283F-0x2800+1))
+    }
+
+    const raindrop = [];
+    for (let i = 0; i < columns; i++) {
+      raindrop[i] = 1;
+    }
+    
+    const draw = () => {
+      context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+      context.fillRect(0, 0, canvas.width, canvas.height);
+
+      context.fillStyle = '#0F0';
+      context.font = `${fontSize}px monospace`;
+
+      for (let n = 0; n < raindrop.length; n++) {
+        const text = brailleUnicode[Math.floor(Math.random() * brailleUnicode.length)];
+
+        context.fillText(text, n*fontSize, raindrop[n]*fontSize);
+
+        if (raindrop[n]*fontSize > canvas.height && Math.random() > 0.975) {
+          raindrop[n] = 0;
+        }
+        raindrop[n]++;
+      }
+    }
+
+    setInterval(draw, 30);
+
+
+    // const headerContainer = document.querySelector('.header-container');
+    // let n = 0;
+    // let headConWidth = headerContainer.clientWidth;
+    // let i = 0;
+    // let value;
+    // while (n < 20) {
+    //   let divColumn = document.createElement('div');
+    //   let dColWidth = divColumn.clientWidth;
+    //   divColumn.className =`column col-${++n}`;
+    //   i = 0;
+    //   while (i < 20) {
+    //     ++i;
+    //     value = Math.floor(Math.random() * 255) + 10240;
+    //     let newSpan = document.createElement('span');
+    //     newSpan.innerHTML = `&#${value};`;
+    //     divColumn.appendChild(newSpan);
+    //   }
+    //   headerContainer.appendChild(divColumn);
+    // }
+  }, []);
+
   return (
     <header id="home">
-      
+      <canvas id="brailleMatrix"></canvas>
+      {/* <div className="header-container" ></div> */}
+      <h1>ALEJANDRO D<br/>NAVA</h1>
+      <img src="" alt="Photo of me, Alejandro"/>
     </header>
   )
 }

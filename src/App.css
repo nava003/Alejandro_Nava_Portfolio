@@ -3,6 +3,7 @@ html {
   background-color:rgb(230, 230, 230);
 }
 
+/* Nav.jsx CSS */
 nav {
   position: fixed;
   top: 0;
@@ -32,5 +33,57 @@ nav a:last-child {
 }
 
 nav img:hover {
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(136, 136, 136);
+}
+
+/* Header.jsx CSS */
+#home {
+  background-color: black;
+  font-size: 2em;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+#brailleMatrix {
+  width: 100%;
+}
+/* .header-container {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.column > * {
+  display: block;
+  animation: 3s infinite colorPulse;
+  padding: 0 0.125em;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: #e6ffe6;
+  }
+  40% {
+    color: green;
+  }
+  50% {
+    color: #006700;
+  }
+  100% {
+    color: #001a00;
+  }
+} */
+
+#home h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+/* Project.jsx CSS */
+.project-cards img{
+  width: 300px;
+  height: 300px;
 }
