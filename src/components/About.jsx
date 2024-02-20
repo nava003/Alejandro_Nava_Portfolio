@@ -1,5 +1,3 @@
-// import personal-photo from './public/'
-
 function About() {
   return (
     <div id="about" className="about-container">      
