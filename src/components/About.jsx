@@ -2,10 +2,7 @@
 
 function About() {
   return (
-    <div id="about" className="about-container">
-      <h1>Alejandro D. Nava</h1>
-      <img src="" alt="Photo of me, Alejandro"/>
-      
+    <div id="about" className="about-container">      
       <h2>Skills Acquired</h2>
       <p>
         Primary: HTML, CSS, Javascript, API, NodeJS, OOP, ExpressJS, SQL, MySQL ORM, MVC, NoSQL,
