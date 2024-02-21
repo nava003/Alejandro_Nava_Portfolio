@@ -1,6 +1,7 @@
 /* The Page Style CSS File */
 #parentApp {
   height: 100vh;
+  background-color: black;
 }
 
 #brailleMatrix {
@@ -10,11 +11,28 @@
 #portfolio-app {
   position: relative;
   height: 100%;
+  color: white;
   overflow-y: scroll;
   scrollbar-width: none;
 }
 #portfolio-app::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#home, #about, #projects, #contact {
+  margin: 0 100px 0 100px;
+  padding: 20px 0 20px 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  animation: fadeIn 5s;
 }
 
 /* Nav.jsx CSS */
@@ -24,6 +42,7 @@ nav {
   left: 0;
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1s;
 }
 
 nav a {
@@ -52,25 +71,31 @@ nav img:hover {
 
 /* Header.jsx CSS */
 #home {
-  background-color: black;
-  font-size: 2em;
-  font-family: monospace;
-  overflow: hidden;
-}
-
-#brailleMatrix {
-  width: 100%;
+  width: 50%;
+  margin: 50px auto auto;
 }
 
 #home h1 {
-  width: 50%;
-  margin: auto;
+  font-size: large;
+  font-family: monospace;
   text-align: center;
-  color: white;
 }
 
-/* Project.jsx CSS */
+/* About.jsx CSS */
+#about {
+
+}
+
+/* Projects.jsx CSS */
+#projects {
+
+}
 .project-cards img{
   width: 300px;
   height: 300px;
+}
+
+/* Contact.jsx */
+#contact {
+
 }
