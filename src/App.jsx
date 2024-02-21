@@ -7,9 +7,9 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div>
+    <div id='parentApp'>
       <BrailleMatrix/>
-      <div className='portfolio-app'>
+      <div id='portfolio-app'>
         <Nav/>
         <Header/>
         <About/>

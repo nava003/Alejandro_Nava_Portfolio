@@ -1,6 +1,20 @@
 /* The Page Style CSS File */
-html {
-  background-color:rgb(230, 230, 230);
+#parentApp {
+  height: 100vh;
+}
+
+#brailleMatrix {
+  position: absolute;
+}
+
+#portfolio-app {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+#portfolio-app::-webkit-scrollbar {
+  display: none;
 }
 
 /* Nav.jsx CSS */
@@ -21,7 +35,7 @@ nav img {
   display: block;
   padding: 6px;
   width: 50px;
-  background-color: rgba(136, 136, 136, 0.3);
+  background-color: rgba(136, 136, 136, 0.5);
   border-radius: 30%;
 }
 
