@@ -16,9 +16,9 @@ function Header() {
       brailleUnicode[i] = String.fromCharCode(0x2800 + Math.random() * (0x283F-0x2800+1))
     }
 
-    const raindrop = [];
+    const raindropEffect = [];
     for (let i = 0; i < columns; i++) {
-      raindrop[i] = 1;
+      raindropEffect[i] = 1;
     }
     
     const draw = () => {
@@ -28,15 +28,15 @@ function Header() {
       context.fillStyle = '#0F0';
       context.font = `${fontSize}px monospace`;
 
-      for (let n = 0; n < raindrop.length; n++) {
+      for (let n = 0; n < raindropEffect.length; n++) {
         const text = brailleUnicode[Math.floor(Math.random() * brailleUnicode.length)];
 
-        context.fillText(text, n*fontSize, raindrop[n]*fontSize);
+        context.fillText(text, n*fontSize, raindropEffect[n]*fontSize);
 
-        if (raindrop[n]*fontSize > canvas.height && Math.random() > 0.975) {
-          raindrop[n] = 0;
+        if (raindropEffect[n]*fontSize > canvas.height && Math.random() > 0.975) {
+          raindropEffect[n] = 0;
         }
-        raindrop[n]++;
+        raindropEffect[n]++;
       }
     }
 
