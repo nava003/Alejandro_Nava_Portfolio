@@ -47,33 +47,6 @@ nav img:hover {
 #brailleMatrix {
   width: 100%;
 }
-/* .header-container {
-  display: flex;
-  height: auto;
-  overflow: hidden;
-  text-align: center;
-}
-
-.column > * {
-  display: block;
-  animation: 3s infinite colorPulse;
-  padding: 0 0.125em;
-}
-
-@keyframes colorPulse {
-  0% {
-    color: #e6ffe6;
-  }
-  40% {
-    color: green;
-  }
-  50% {
-    color: #006700;
-  }
-  100% {
-    color: #001a00;
-  }
-} */
 
 #home h1 {
   width: 50%;
