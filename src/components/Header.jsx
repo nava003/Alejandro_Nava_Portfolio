@@ -10,8 +10,11 @@ function Header() {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
 
+    canvas.width = canvasWidth;
+    canvas.height = canvasHeight;
+
     const fontSize = 16;
-    const columns = size.width/fontSize;
+    const columns = canvasWidth/fontSize;
 
     const brailleUnicode = [];
     for (let i = 0; i < 100; i++) {
@@ -25,9 +28,6 @@ function Header() {
     
     // Draw the Matrix raindrop effect
     const drawMatrix = () => {
-      canvas.width = canvasWidth;
-      canvas.height = canvasHeight;
-
       context.fillStyle = 'rgba(0, 0, 0, 0.05)';
       context.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -47,9 +47,10 @@ function Header() {
     }
 
     // Callback the draw function at a rate of 30 milliseconds
-    setInterval(drawMatrix, 30);
+    const intervalID = setInterval(drawMatrix, 30);
 
     const handleResize = () => {
+      clearInterval(intervalID);
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
     }
