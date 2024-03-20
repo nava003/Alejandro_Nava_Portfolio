@@ -1,8 +1,8 @@
 function Projects() {
   return (
-    <div id="projects" className="projects-container">
+    <div id="projects" className="main-containers">
       <h1>Projects Involved</h1>
-      <div id="project-cards">
+      <div id="card-group1" className="project-cards">
         <div className="card">
           <a href="">
             <img src="/HobbyHouseIcon.jpeg" alt="Image of Hobby_House_Icon" />
@@ -24,6 +24,8 @@ function Projects() {
           <h2>Note Taker</h2>
           <p>Description</p>
         </div>
+      </div>
+      <div id="card-group2" className="project-cards">
         <div className="card">
           <a href="">
             <img src="/plant-leaf.svg" alt="SVG icon image of a plant." />
