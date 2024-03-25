@@ -4,7 +4,6 @@ const Css3svg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      id="Css"
       class="svgSkills"
       viewBox="0 0 256 361"
     >

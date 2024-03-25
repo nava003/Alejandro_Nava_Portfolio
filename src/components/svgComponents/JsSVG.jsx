@@ -4,7 +4,6 @@ const Jssvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      id="javascript"
       class="svgSkills"
       viewBox="0 0 256 256"
     >
