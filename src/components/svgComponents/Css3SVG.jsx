@@ -7,6 +7,7 @@ const Css3svg = () => {
       class="svgSkills"
       viewBox="0 0 256 361"
     >
+      <title>CSS 3</title>
       <path
         fill="#2143c9"
         d="M128 360 24 331 0 71h256l-24 260-104 29z"

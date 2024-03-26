@@ -7,6 +7,7 @@ const Html5svg = () => {
       class="svgSkills"
       viewBox="0 0 256 361"
     >
+      <title>HTML 5</title>
       <path
         fill="#cb2e12"
         d="m256 71-24 260-104 29-104-29L0 71h256z"

@@ -7,6 +7,7 @@ const Apisvg = () => {
       class="svgSkills"
       viewBox="0 0 1536 1146"
     >
+      <title>Web Application&#013;&#010;Programming Interface</title>
       <path
         id="svg_1"
         fill="#DEEDFF"
