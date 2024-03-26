@@ -9,6 +9,9 @@
 }
 
 #portfolio-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   height: 100%;
   color: white;
@@ -28,11 +31,11 @@
   }
 }
 
-#home, #about, #projects, #contact {
-  margin: 0 100px 0 100px;
+.main-containers {
+  width: 80%;
   padding: 20px 0 20px 0;
   background-color: rgba(0, 0, 0, 0.75);
-  animation: fadeIn 5s;
+  animation: fadeIn 2s;
 }
 
 /* Nav.jsx CSS */
@@ -71,29 +74,79 @@ nav img:hover {
 
 /* Header.jsx CSS */
 #home {
-  width: 50%;
-  margin: 50px auto auto;
-}
-
-#home h1 {
-  font-size: large;
-  font-family: monospace;
+  margin-top: 50px;
   text-align: center;
 }
 
-/* About.jsx CSS */
-#about {
+#home h1 {
+  font-family: monospace;
+}
 
+#home h1:nth-child(2) {
+  margin-top: 10px;
+  font-family: 'Calibri';
+}
+
+#home img {
+  margin-top: 10px;
+}
+
+/* About.jsx CSS */
+#about p {
+  margin: 12px 0 12px 0;
+  line-height: 22px;
+}
+
+#about p:first-of-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.svgSkills {
+  height: 100px;
+}
+.svgSkills:last-child {
+  width: 140px;
+}
+
+#CSS {
+  transform: scaleX(1.3);
+  transform-origin: center;
 }
 
 /* Projects.jsx CSS */
 #projects {
 
 }
-.project-cards img{
-  width: 300px;
-  height: 300px;
+
+.project-cards {
+  display: flex;
 }
+
+.card {
+  margin-top: 15px;
+  flex: 1 0 0;
+  text-align: center;
+}
+
+.card a {
+  display: inline-flex;
+  border-radius: 35%;
+}
+
+.card img {
+  width: 200px;
+  border-radius: 35%;
+}
+.card img:hover {
+  opacity: 50%;
+}
+
+.card h2, .card p {
+  margin-top: 12px;
+}
+
+
 
 /* Contact.jsx */
 #contact {
