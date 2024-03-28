@@ -1,33 +1,27 @@
-// import { TbDatabaseOff } from 'react-icons/tb';
-// import { SiPwa, SiCplusplus } from 'react-icons/si';
-// import { DiPhp, DiJava, DiPython } from "react-icons/di";
-// import { BsFiletypeSql } from 'react-icons/bs';
-import Html5svg from './svgComponents/Html5SVG';
-import Css3svg from "./svgComponents/Css3SVG";
-import Jssvg from './svgComponents/JsSVG';
-import Apisvg from './svgComponents/ApiSVG';
-import Nodejssvg from './svgComponents/NodejsSVG';
-import Oopsvg from './svgComponents/OopSVG';
-import Expressjssvg from './svgComponents/ExpressjsSVG';
-import Mysqlsvg from './svgComponents/MysqlSVG';
-import Mongodbsvg from './svgComponents/MongodbSVG';
-import Reactsvg from './svgComponents/ReactSVG';
-import Bootstrapsvg from './svgComponents/BootstrapSVG';
-import Jquerysvg from './svgComponents/JquerySVG';
-import Handlebarssvg from './svgComponents/HandlebarsSVG';
+import Html5svg from './svgComponents/Html5SVG'; import Css3svg from "./svgComponents/Css3SVG";
+import Jssvg from './svgComponents/JsSVG'; import Apisvg from './svgComponents/ApiSVG';
+import Nodejssvg from './svgComponents/NodejsSVG'; import Oopsvg from './svgComponents/OopSVG';
+import Expressjssvg from './svgComponents/ExpressjsSVG'; import Mysqlsvg from './svgComponents/MysqlSVG';
+import Mongodbsvg from './svgComponents/MongodbSVG'; import Reactsvg from './svgComponents/ReactSVG';
+import Bootstrapsvg from './svgComponents/BootstrapSVG'; import Jquerysvg from './svgComponents/JquerySVG';
+import Handlebarssvg from './svgComponents/HandlebarsSVG'; import Sqlsvg from './svgComponents/SqlSVG';
 
 function About() {
   return (
     <div id="about" className="main-containers">
       <h2>Skills Acquired</h2>
-      <p>
-        <Html5svg/> <Css3svg/> <Bootstrapsvg/> <Jssvg/> <Apisvg/>
-        <Nodejssvg/> <Oopsvg/> <Expressjssvg/> <Mysqlsvg/> <Mongodbsvg/>
-        <Reactsvg/> <Jquerysvg/> <Handlebarssvg/>
+      <p id="primary-skills" className='skills'>
+        <Html5svg/> <Css3svg/> <Bootstrapsvg/> <Jssvg/> <Nodejssvg/>
+        <Expressjssvg/> <Mysqlsvg/> <Mongodbsvg/> <Reactsvg/>
+        <Jquerysvg/> <Handlebarssvg/>
       </p>
+      <p id="concept-skills" className='skills'>
+        <Apisvg/> <Oopsvg/> <Sqlsvg/>
+      </p>
+      <p id="seconday-skills" className='skills'>
 
-        {/* Primary: HTML, CSS, Javascript, API, NodeJS, OOP, ExpressJS,
-        SQL, MySQL ORM, MVC, NoSQL, PWA, React, MERN, State, Bootstrap,
+      </p>
+        {/* Primary: ORM, MVC, NoSQL, PWA, React, MERN, State, Bootstrap,
         jQuery, HandebarsJS, MongoDB.
 
         Secondary: PHP, Java, Python, C++.*/}
