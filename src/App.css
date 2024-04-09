@@ -29,6 +29,11 @@
   border: solid 20px rgba(46, 50, 53, 0.75);
 }
 
+p {
+  line-height: 22px;
+  text-align: justify;
+}
+
 /* Nav.jsx CSS */
 nav {
   position: fixed;
@@ -90,7 +95,6 @@ nav img:hover {
 }
 #about p {
   margin: 12px 0 12px 0;
-  line-height: 25px;
 }
 
 .about-headers {
@@ -139,16 +143,29 @@ nav img:hover {
 
 /* Projects.jsx CSS */
 #projects {
-  
+  display: flex;
+  justify-content: space-around;
+}
+
+#vertical-header {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  position: relative;
+  margin: auto 0;
+}
+
+#card-group {
+  width: 90%;
 }
 
 .project-cards {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
-  margin-top: 15px;
-  flex: 1 0 0;
+  margin: 20px 0;
+  width: 240px;
   text-align: center;
 }
 
