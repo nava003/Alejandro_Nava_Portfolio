@@ -96,17 +96,21 @@ nav a:last-child {
 
 /* About.jsx CSS */
 #about {
-  padding: 10px;
+  justify-content: space-between;
 }
 
-#about p {
-  margin: 12px 0 12px 0;
-}
-
-.about-headers {
+#about h2 {
   width: fit-content;
+  margin: 0 auto;
   padding-bottom: 5px;
   border-bottom: solid;
+}
+
+#skills-container {
+  display: flex;
+  width: 64%;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .skills {
@@ -125,13 +129,15 @@ nav a:last-child {
 }
 
 #topics-container {
-  margin: 10px 0;
-}
-#topics-container .about-headers {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 33%;
 }
 
 .content-animated {
+  margin: 10px 0;
+  text-align: justify;
   animation: reveal-text 600ms ease-in-out forwards;
   transform-origin: top center;
 }
@@ -145,6 +151,12 @@ nav a:last-child {
     opacity: 1;
     transform: rotateX(0deg);
   }
+}
+
+#topic-three p {
+  height: 20em;
+  overflow: auto;
+  scrollbar-width:thin;
 }
 
 /* Projects.jsx CSS */
