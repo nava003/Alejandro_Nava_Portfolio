@@ -4,7 +4,7 @@ const Apisvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="svgSkills"
+      className="svgSkills"
       viewBox="0 0 1536 1146"
     >
       <title>Web Application&#013;&#010;Programming Interface</title>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Expressjssvg = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" class="svgSkills" viewBox="30.01 30.01 227.98 227.98">
+    <svg xmlns="http://www.w3.org/2000/svg" className="svgSkills" viewBox="30.01 30.01 227.98 227.98">
       <title>Express JS</title>
       <circle
         cx="144"

@@ -4,7 +4,7 @@ const Mongodbsvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="svgSkills"
+      className="svgSkills"
       viewBox="36.59 3.01 54.83 121.98"
     >
       <title>Mongo DB</title>

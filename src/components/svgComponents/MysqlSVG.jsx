@@ -2,7 +2,7 @@ import React from "react";
 
 const Mysqlsvg = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" class="svgSkills" viewBox="0 0 128 128">
+    <svg xmlns="http://www.w3.org/2000/svg" className="svgSkills" viewBox="0 0 128 128">
       <title>MySQL</title>
       <path
         fill="#00618A"

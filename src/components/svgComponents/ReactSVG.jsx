@@ -2,7 +2,7 @@ import React from "react";
 
 const Reactsvg = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" class="svgSkills" viewBox="0 1.5 24 21">
+    <svg xmlns="http://www.w3.org/2000/svg" className="svgSkills" viewBox="0 1.5 24 21">
       <title>React</title>
       <circle cx="12" cy="12" r="2.15" fill="#53C1DE" />
       <path

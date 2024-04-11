@@ -4,7 +4,7 @@ const Jquerysvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="svgSkills"
+      className="svgSkills"
       viewBox="1.71 4 124.57 120.01"
     >
       <title>JQuery</title>
