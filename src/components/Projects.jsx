@@ -1,7 +1,7 @@
 function Projects() {
   return (
     <div id="projects" className="main-containers">
-      <h1 id="vertical-header">Projects Involved</h1>
+      <h1 className="vertical-header">Projects Involved</h1>
       <div id="card-group">
         <div id="group-one" className="project-cards">
           <div className="card">
