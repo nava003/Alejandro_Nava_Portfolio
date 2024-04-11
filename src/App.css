@@ -61,8 +61,11 @@ nav img {
   display: block;
   padding: 6px;
   width: 50px;
-  background-color: rgba(136, 136, 136, 0.5);
+  background-color: rgba(136, 136, 136, 0.6);
   border-radius: 30%;
+}
+nav img:hover {
+  background-color: rgb(136, 136, 136);
 }
 
 nav a:last-child {
@@ -70,10 +73,6 @@ nav a:last-child {
   margin: 0 15px 15px 0;
   bottom: 0;
   right: 0;
-}
-
-nav img:hover {
-  background-color: rgb(136, 136, 136);
 }
 
 /* Header.jsx CSS */

@@ -7,7 +7,6 @@ import {
 
 function About() {
   const [activeDiv, setActiveDiv] = useState(null);
-
   const div1 = 'div1';
   const div2 = 'div2';
   const div3 = 'div3';
