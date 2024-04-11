@@ -25,8 +25,16 @@
 .main-containers {
   width: 80%;
   margin-top: 20px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.75);
   border: solid 20px rgba(46, 50, 53, 0.75);
+}
+
+.vertical-header {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  position: relative;
+  margin: auto 0;
 }
 
 p {
@@ -144,14 +152,7 @@ nav img:hover {
 /* Projects.jsx CSS */
 #projects {
   display: flex;
-  justify-content: space-around;
-}
-
-#vertical-header {
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  position: relative;
-  margin: auto 0;
+  justify-content: space-between;
 }
 
 #card-group {
@@ -160,7 +161,7 @@ nav img:hover {
 
 .project-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .card {
@@ -178,9 +179,9 @@ nav img:hover {
   width: 200px;
   border-radius: 35%;
 }
-.card img:hover {
-  opacity: 50%;
-}
+  .card img:hover {
+    opacity: 50%;
+  }
 
 .card h2, .card p {
   margin-top: 12px;
@@ -188,5 +189,44 @@ nav img:hover {
 
 /* Contact.jsx */
 #contact {
-  
+  display: flex;
+}
+
+#contact-group {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#contact-self {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact-form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+input, textarea, button {
+  border-radius: 6px;
+}
+input {
+  height: 40px;
+  padding-left: 5px;
+}
+textarea {
+  height: 100px;
+  padding: 5px 0 0 5px;
+  resize: none;
+}
+  textarea::-webkit-scrollbar {
+    width: 0;
+  }
+button {
+  height: 40px;
 }
