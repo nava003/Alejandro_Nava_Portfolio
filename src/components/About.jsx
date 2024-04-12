@@ -80,24 +80,24 @@ function About() {
               experiment with HTML and CSS in ways I couldn't in a classroom setting.
               <br/><br/>
               From there, I got involved in learning IT in general, to see what other coding language
-              or field would stick to me. Dabbled in hardware knowledge, video game knowledge,
-              various software knowledge, attended and passed a coding bootcamp through Gateway
-              Technical College, dabbled in satellite knowledge, gained vast amounts of information
-              on Cybersecurity through online courses provided by Columbia College of Missouri - even
-              earning an Associates in General Studies and credits towards a Bachelors in
-              Cybersecurity - and now recently attended and passed a newer coding bootcamp through
-              Northwestern University + EdX.
+              or field would stick to me. Dabbled in hardware knowledge, video game knowledge, various
+              software knowledge, attended and passed a coding bootcamp through Gateway Technical
+              College, dabbled in satellite knowledge, gained vast amounts of information on
+              Cybersecurity through online courses provided by Columbia College of Missouri - even
+              earning an Associates in General Studies and credits towards a Bachelors in Cybersecurity
+              - and now recently attended and passed a newer coding bootcamp through Northwestern
+              University + EdX.
               <br/><br/>
-              Could I have done most of the coding knowledge on my own through online tutorials
-              and videos? Probably, I know a handful who have done that. However, without the
-              series of paths I've taken so far, albeit long and frustrating at times, I wouldn't
-              have a different perspective that most probably don't realize when they're teaching
-              themselves, or when most simply go towards a career based on a one-way education route.
-              When you limit your options by going for the least difficult path, you're bound to be
-              disappointed on the limited rewards at the end of said path. When you take different
-              paths or forge new ones, and conquer the challenges for making those choices, your
-              reward is more than just the end route. It's what you've gained along the way, and can
-              now apply towards that goal you've set out in the first place.
+              Could I have done most of the coding knowledge on my own through online tutorials and
+              videos? Probably, I know a handful who have done that. However, without the series of
+              paths I've taken so far, albeit long and frustrating at times, I wouldn't have a
+              different perspective that most probably don't realize when they're teaching themselves,
+              or when most simply go towards a career based on a one-way education route. When you
+              limit your options by going for the least difficult path, you're bound to be disappointed
+              on the limited rewards at the end of said path. When you take different paths or forge
+              new ones, and conquer the challenges for making those choices, your reward is more than
+              just the end route. It's what you've gained along the way, and can now apply towards that
+              goal you've set out in the first place.
               <br/><br/>
               Keep learning, keep exploring, keep improving, and keep coding.
             </p>
