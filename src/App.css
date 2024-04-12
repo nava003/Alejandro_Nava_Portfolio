@@ -165,18 +165,19 @@ nav a:last-child {
 }
 
 #card-group {
-  width: 90%;
+  width: 95%;
 }
 
 .project-cards {
   display: flex;
-  justify-content: space-around;
 }
 
 .card {
+  display: flex;
   margin: 20px 0;
-  width: 240px;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: -webkit-fill-available;
 }
 
 .card a {
@@ -188,11 +189,8 @@ nav a:last-child {
   width: 200px;
   border-radius: 35%;
 }
-  .card img:hover {
-    opacity: 50%;
-  }
 
-.card h2, .card p {
+.card h2, .card button {
   margin-top: 12px;
 }
 
@@ -218,21 +216,25 @@ nav a:last-child {
   justify-content: center;
   gap: 18px;
 }
-input, textarea, button {
+
+input, textarea, #contact-form button {
   border-radius: 6px;
 }
+
 input {
   height: 40px;
   padding-left: 5px;
 }
+
 textarea {
   height: 100px;
   padding: 5px 0 0 5px;
   resize: none;
 }
-  textarea::-webkit-scrollbar {
-    width: 0;
-  }
-button {
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+#contact-form button {
   height: 40px;
 }
