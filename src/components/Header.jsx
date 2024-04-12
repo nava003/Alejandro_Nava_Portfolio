@@ -1,10 +1,9 @@
 function Header() {
   return (
-    <header id="home">
-      <div className="header-container" >
-        <h1>ALEJANDRO D<br/>NAVA</h1>
-        <img src="" alt="Photo of me, Alejandro"/>
-      </div>
+    <header id="home" className="main-containers">
+      <h1>ALEJANDRO NAVA</h1>
+      <img src="/portfolio-face.jpg" alt="Photo of me, Alejandro"/>
+      <h1>FULLSTACK DEVELOPER</h1>
     </header>
   )
 }

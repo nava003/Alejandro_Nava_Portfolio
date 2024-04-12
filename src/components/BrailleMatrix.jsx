@@ -22,8 +22,8 @@ function BrailleMatrix() {
     }
 
     const raindropEffect = [];
-    for (let i = 0; i < columns; i++) {
-      raindropEffect[i] = 1;
+    for (let n = 0; n < columns; n++) {
+      raindropEffect[n] = 1;
     }
     
     // Draw the Matrix raindrop effect
@@ -34,15 +34,15 @@ function BrailleMatrix() {
       context.fillStyle = '#0F0';
       context.font = `${fontSize}px monospace`;
 
-      for (let n = 0; n < raindropEffect.length; n++) {
+      for (let d = 0; d < raindropEffect.length; d++) {
         const text = brailleUnicode[Math.floor(Math.random() * brailleUnicode.length)];
 
-        context.fillText(text, n*fontSize, raindropEffect[n]*fontSize);
+        context.fillText(text, d*fontSize, raindropEffect[d]*fontSize);
 
-        if (raindropEffect[n]*fontSize > canvas.height && Math.random() > 0.975) {
-          raindropEffect[n] = 0;
+        if (raindropEffect[d]*fontSize > canvas.height && Math.random() > 0.975) {
+          raindropEffect[d] = 0;
         }
-        raindropEffect[n]++;
+        raindropEffect[d]++;
       }
     }
 
