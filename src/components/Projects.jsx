@@ -5,63 +5,47 @@ function Projects() {
       <div id="card-group">
         <div id="group-one" className="project-cards">
           <div className="card">
-            <a href="">
-              <img src="/HobbyHouseIcon.jpeg" alt="Image of Hobby_House_Icon" />
-            </a>
+            <img src="/HobbyHouseIcon.jpeg" alt="Image of Hobby_House_Icon" />
             <h2>Hobby House</h2>
-            <p>
-              Fullstack application that allows registered hobbyists
-              to converse in their own favorite subjects (hiking, drawing, astrology, etc.).
-              <br/><br/>
-              Utilizes the MERN Method.
-            </p>
+            <a href="https://github.com/nava003/The_Hobby_House" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
 
           <div className="card">
-            <a href="">
-              <img src="/BookSearchEngine.jpg" alt="Image of Book_Search_Engine" />
-            </a>
+            <img src="/BookSearchEngine.jpg" alt="Image of Book_Search_Engine" />
             <h2>Book Search</h2>
-            <p>
-              Fullstack application that allows the user to search for books based on
-              a genre or series.
-              <br/><br/>
-              Utilizes the MERN Method along with Google Search API.
-            </p>
+            <a href="https://github.com/nava003/Book_Search_Engine" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
 
           <div className="card">
-            <a href="">
-              <img src="/NoteTakerApp.jpg" alt="Image of Note_Taker_App" />
-            </a>
+            <img src="/NoteTakerApp.jpg" alt="Image of Note_Taker_App" />
             <h2>Note Taker</h2>
-            <p>Description</p>
+            <a href="https://github.com/nava003/Note_Taker" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
         </div>
 
         <div id="group-two" className="project-cards">
           <div className="card">
-            <a href="">
-              <img src="/plant-leaf.svg" alt="SVG icon image of a plant." />
-            </a>
+            <img src="/plant-leaf.svg" alt="SVG icon image of a plant." />
             <h2>Green Thumb Guide</h2>
-            <p>Description</p>
+            <a href="https://github.com/SherryK1103/Green-Thumb-Guide" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
 
           <div className="card">
-            <a href="">
-              <img src="/WorkDayScheduler.jpg" alt="Image of a scheduler project" />
-            </a>
+            <img src="/WorkDayScheduler.jpg" alt="Image of a scheduler project" />
             <h2>Work Day Scheduler</h2>
-            <p>Description</p>
+            <a href="https://github.com/nava003/Work_Day_Scheduler" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
 
           <div className="card">
-            <a href="">
-              <img src="/ArtistLookup.jpg" alt="Image of an artist lookup project" />
-            </a>
+            <img src="/ArtistLookup.jpg" alt="Image of an artist lookup project" />
             <h2>Artist Lookup</h2>
-            <p>Description</p>
+            <a href="https://github.com/nava003/Artist_Lookup" target="_blank" rel="noopener noreferrer"><button>Github Link</button></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><button>Deployment Link</button></a>
           </div>
         </div>
       </div>
