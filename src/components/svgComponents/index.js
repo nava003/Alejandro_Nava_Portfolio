@@ -14,3 +14,4 @@ export {default as Reactsvg} from './ReactSVG';
 export {default as Sqlsvg} from './SqlSVG';
 export {default as Githubiconsvg} from './GithubIconSVG';
 export {default as Demoiconsvg} from './DemoIconSVG';
+export {default as Resumesvg} from './ResumeSVG';
