@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <header id="home" className="main-containers">
-      <h1>ALEJANDRO NAVA</h1>
+      <h1>ALEJANDRO (ALEX) NAVA</h1>
       <div className="card-container" onClick={handleImageFlip}>
         <div className={`imageCard ${flip ? "showImg" : "showSvg"}`}>
           <img src="/portfolio-face.jpg" alt="Photo of me, Alejandro"/>
