@@ -88,10 +88,47 @@ nav a:last-child {
   font-size: 40px;
 }
 
-#home img {
-  margin-top: 10px;
+.card-container {
+  perspective: 1000px;
+}
+
+.imageCard {
+  height: 162px;
   width: 130px;
+  position: relative;
+  transition: transform 300ms;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.showImg {
+  transform: rotateY(0deg);
+}
+
+.showSvg {
+  transform: rotateY(180deg);
+}
+
+.imageCard img, .imageCard svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.imageCard img {
   border-radius: 37%;
+}
+
+.imageCard svg {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+.showSvg svg {
+  display: block;
+}
+.showSvg img {
+  backface-visibility: hidden;
 }
 
 /* About.jsx CSS */
