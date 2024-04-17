@@ -88,10 +88,47 @@ nav a:last-child {
   font-size: 40px;
 }
 
-#home img {
-  margin-top: 10px;
+.card-container {
+  perspective: 1000px;
+}
+
+.imageCard {
+  height: 162px;
   width: 130px;
+  position: relative;
+  transition: transform 300ms;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.showImg {
+  transform: rotateY(0deg);
+}
+
+.showSvg {
+  transform: rotateY(180deg);
+}
+
+.imageCard img, .imageCard svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.imageCard img {
   border-radius: 37%;
+}
+
+.imageCard svg {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+.showSvg svg {
+  display: block;
+}
+.showSvg img {
+  backface-visibility: hidden;
 }
 
 /* About.jsx CSS */
@@ -99,18 +136,23 @@ nav a:last-child {
   justify-content: space-between;
 }
 
-#about h2 {
-  width: fit-content;
-  margin: 0 auto;
-  padding-bottom: 5px;
+#about span {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 40px;
+  padding-bottom: 3px;
   border-bottom: solid;
 }
 
-#skills-container {
+#skills-container, #topics-container {
   display: flex;
-  width: 64%;
   flex-direction: column;
+}
+
+#skills-container {
   gap: 50px;
+  width: 64%;
+  text-align: center;
 }
 
 .skills {
@@ -129,10 +171,14 @@ nav a:last-child {
 }
 
 #topics-container {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   width: 33%;
+  text-align: center;
+}
+
+#topics-container span:hover {
+  cursor: pointer;
+  color: rgb(201, 201, 201) !important;
 }
 
 .content-animated {
@@ -153,8 +199,9 @@ nav a:last-child {
   }
 }
 
-#topic-three p {
+#third-p {
   height: 20em;
+  padding-right: 10px;
   overflow: auto;
   scrollbar-width:thin;
 }
@@ -170,19 +217,21 @@ nav a:last-child {
 
 .project-cards {
   display: flex;
+  justify-content: center;
 }
 
 .card {
   display: flex;
-  margin: 20px 0;
   flex-direction: column;
   align-items: center;
-  width: -webkit-fill-available;
+  margin: 20px;
+  padding: 20px;
+  width: 290px;
+  border: solid transparent;
+  border-radius: 25%;
 }
-
-.card a {
-  display: inline-flex;
-  border-radius: 35%;
+.card:hover {
+  border-color: rgb(10, 141, 10);
 }
 
 .card img {
@@ -190,8 +239,30 @@ nav a:last-child {
   border-radius: 35%;
 }
 
-.card h2, .card button {
-  margin-top: 12px;
+.card h2, .project-links {
+  margin-top: 15px;
+}
+
+.project-links {
+  display: flex;
+  gap: 50px;
+}
+
+.project-links svg {
+  display: block;
+  width: 50px;
+}
+
+.project-links button {
+  background-color: #589957;
+  border: none;
+  cursor: pointer;
+}
+.project-links button:first-child {
+  border-radius: 12px;
+}
+.project-links button:last-child {
+  border-radius: 25px;
 }
 
 /* Contact.jsx */

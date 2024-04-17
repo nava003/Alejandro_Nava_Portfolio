@@ -2,13 +2,10 @@ import { useState } from 'react';
 import * as svgComponents from './svgComponents';
 
 function About() {
-  const [activeDiv, setActiveDiv] = useState(null);
-  const div1 = 'div1';
-  const div2 = 'div2';
-  const div3 = 'div3';
+  const [activeSpan, setActiveSpan] = useState(null);
 
-  const handleReveal = (divRef) => {
-    setActiveDiv(prevActiveDiv => (prevActiveDiv === divRef ? null : divRef));
+  const handleReveal = (id) => {
+    setActiveSpan(id === activeSpan ? null : id);
   };
 
   return (
@@ -16,7 +13,7 @@ function About() {
       <h1 className='vertical-header'>About Me</h1>
 
       <div id='skills-container'>
-        <h2>Skills Acquired</h2>
+        <div><span>Skills Acquired</span></div>
 
         <div id="primary-skills" className='skills'>
           <svgComponents.Html5svg/> <svgComponents.Css3svg/> <svgComponents.Bootstrapsvg/>
@@ -38,9 +35,14 @@ function About() {
       </div>
 
       <div id='topics-container'>
-        <div id='topic-one'>
-          <h2 onClick={() => handleReveal(div1)}>Studying, Coding, Learning, Applying</h2>
-          {activeDiv === div1 &&
+        <div>
+          <span
+            style={{color: activeSpan === 'topic-one' || activeSpan === null ? '' : 'gray'}}
+            onClick={() => handleReveal('topic-one')}
+          >
+            Studying, Coding, Learning, Applying
+          </span>
+          {activeSpan === 'topic-one' &&
             <p className='content-animated'>
               TLDR: Highschool was when I learned HTML; I grew personal experience by coding personal
               projects; undertook a total of two bootcamps to acquire knowledge; studied video
@@ -52,9 +54,14 @@ function About() {
           }
         </div>
 
-        <div id='topic-two'>
-          <h2 onClick={() => handleReveal(div2)}>Web Development Isn't Hard, Right?</h2>
-          {activeDiv === div2 &&
+        <div>
+          <span
+            style={{color: activeSpan === 'topic-two' || activeSpan === null ? '' : 'gray'}}
+            onClick={() => handleReveal('topic-two')}
+          >
+            Web Development Isn't Hard, Right?
+          </span>
+          {activeSpan === 'topic-two' &&
             <p className='content-animated'>
               For many, learning Web Development may sound "easy" or "not a challenging field", but
               that's because they only understand the tip of the iceberg of web development. There's a
@@ -68,10 +75,15 @@ function About() {
           }
         </div>
 
-        <div id='topic-three'>
-          <h2 onClick={() => handleReveal(div3)}>My Development Story</h2>
-          {activeDiv === div3 &&
-            <p className='content-animated'>
+        <div>
+          <span
+            style={{color: activeSpan === 'topic-three' || activeSpan === null ? '' : 'gray'}}
+            onClick={() => handleReveal('topic-three')}
+          >
+            My Development Story
+          </span>
+          {activeSpan === 'topic-three' &&
+            <p id='third-p' className='content-animated'>
               I have a passion for web development ever since I was exposed to it in highschool - 
               Lakeview Technology Academy. Back then, I only understood HTML, CSS, and Java, but that
               was enough building blocks to appreciate how webpages were crafted, appeared, and
