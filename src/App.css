@@ -203,12 +203,12 @@ nav a:last-child {
 }
 
 .card h2, .project-links {
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .project-links {
   display: flex;
-  gap: 15px;
+  gap: 50px;
 }
 
 .project-links svg {
