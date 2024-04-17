@@ -180,19 +180,21 @@ nav a:last-child {
 
 .project-cards {
   display: flex;
+  justify-content: center;
 }
 
 .card {
   display: flex;
-  margin: 20px 0;
   flex-direction: column;
   align-items: center;
-  width: -webkit-fill-available;
+  margin: 20px;
+  padding: 20px;
+  width: 290px;
+  border: solid transparent;
+  border-radius: 25%;
 }
-
-.card a {
-  display: inline-flex;
-  border-radius: 35%;
+.card:hover {
+  border-color: rgb(10, 141, 10);
 }
 
 .card img {
@@ -200,8 +202,29 @@ nav a:last-child {
   border-radius: 35%;
 }
 
-.card h2, .card button {
+.card h2, .project-links {
   margin-top: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links svg {
+  display: block;
+  width: 50px;
+}
+
+.project-links button {
+  border: none;
+  cursor: pointer;
+}
+.project-links button:first-child {
+  border-radius: 12px;
+}
+.project-links button:last-child {
+  border-radius: 25px;
 }
 
 /* Contact.jsx */
