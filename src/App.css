@@ -60,6 +60,11 @@ p {
   perspective: 1000px;
 }
 
+.card-container span {
+  display: block;
+  text-align: center;
+}
+
 .imageCard {
   height: 162px;
   width: 130px;
@@ -97,6 +102,65 @@ p {
 }
 .showSvg img {
   backface-visibility: hidden;
+}
+
+/* Projects.jsx CSS */
+#projects {
+  justify-content: space-between;
+}
+
+#card-group {
+  width: 100%;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 290px;
+  border: solid transparent;
+  border-radius: 25%;
+}
+.card:hover {
+  border-color: rgb(10, 141, 10);
+}
+
+.card img {
+  width: 200px;
+  border-radius: 35%;
+}
+
+.card h2, .project-links {
+  margin-top: 15px;
+}
+
+.project-links {
+  display: flex;
+  gap: 50px;
+}
+
+.project-links svg {
+  display: block;
+  width: 50px;
+}
+
+.project-links button {
+  background-color: #589957;
+  border: none;
+  cursor: pointer;
+}
+.project-links button:first-child {
+  border-radius: 12px;
+}
+.project-links button:last-child {
+  border-radius: 25px;
 }
 
 /* About.jsx CSS */
@@ -172,65 +236,6 @@ p {
   padding-right: 10px;
   overflow: auto;
   scrollbar-width:thin;
-}
-
-/* Projects.jsx CSS */
-#projects {
-  justify-content: space-between;
-}
-
-#card-group {
-  width: 95%;
-}
-
-.project-cards {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  width: 290px;
-  border: solid transparent;
-  border-radius: 25%;
-}
-.card:hover {
-  border-color: rgb(10, 141, 10);
-}
-
-.card img {
-  width: 200px;
-  border-radius: 35%;
-}
-
-.card h2, .project-links {
-  margin-top: 15px;
-}
-
-.project-links {
-  display: flex;
-  gap: 50px;
-}
-
-.project-links svg {
-  display: block;
-  width: 50px;
-}
-
-.project-links button {
-  background-color: #589957;
-  border: none;
-  cursor: pointer;
-}
-.project-links button:first-child {
-  border-radius: 12px;
-}
-.project-links button:last-child {
-  border-radius: 25px;
 }
 
 /* Contact.jsx */
