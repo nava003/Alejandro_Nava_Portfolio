@@ -32,7 +32,7 @@ function Projects() {
             <h2>Book Search</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/Book_Search_Engine')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://adnbooksearchengine.netlify.app')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A website built to google search books based on series title or genre, and
