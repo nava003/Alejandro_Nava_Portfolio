@@ -43,38 +43,6 @@ p {
   text-align: justify;
 }
 
-/* Nav.jsx CSS */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-nav a {
-  margin: 15px 0 0 15px;
-  border-radius: 30%;
-}
-
-nav img {
-  display: block;
-  padding: 6px;
-  width: 50px;
-  background-color: rgba(136, 136, 136, 0.6);
-  border-radius: 30%;
-}
-nav img:hover {
-  background-color: rgb(136, 136, 136);
-}
-
-nav a:last-child {
-  position: fixed;
-  margin: 0 15px 15px 0;
-  bottom: 0;
-  right: 0;
-}
-
 /* Header.jsx CSS */
 #home {
   margin-top: 30px;
@@ -90,6 +58,11 @@ nav a:last-child {
 
 .card-container {
   perspective: 1000px;
+}
+
+.card-container span {
+  display: block;
+  text-align: center;
 }
 
 .imageCard {
@@ -129,6 +102,97 @@ nav a:last-child {
 }
 .showSvg img {
   backface-visibility: hidden;
+}
+
+/* Projects.jsx CSS */
+#projects {
+  justify-content: space-between;
+}
+
+#card-group {
+  width: 100%;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  width: 290px;
+  height: 350px;
+  border: solid transparent;
+  border-radius: 25%;
+}
+.card:hover {
+  border-color: rgb(10, 141, 10);
+}
+
+.card img {
+  width: 200px;
+  border-radius: 35%;
+}
+
+.project-links {
+  display: flex;
+  gap: 50px;
+}
+
+.project-links svg {
+  display: block;
+  width: 50px;
+}
+
+.project-links button {
+  background-color: #589957;
+  border: none;
+  cursor: pointer;
+}
+.project-links button:first-child {
+  border-radius: 12px;
+}
+.project-links button:last-child {
+  border-radius: 25px;
+}
+
+.card .tooltip-text {
+  width: 300px;
+  background-color: rgb(218, 218, 218);
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 154%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+.card .tooltip-text::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translate(0, -50%);
+  border-width: 30px;
+  border-style: solid;
+  border-color: transparent rgb(218, 218, 218) transparent transparent;
+}
+
+.card:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* About.jsx CSS */
@@ -204,65 +268,6 @@ nav a:last-child {
   padding-right: 10px;
   overflow: auto;
   scrollbar-width:thin;
-}
-
-/* Projects.jsx CSS */
-#projects {
-  justify-content: space-between;
-}
-
-#card-group {
-  width: 95%;
-}
-
-.project-cards {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  width: 290px;
-  border: solid transparent;
-  border-radius: 25%;
-}
-.card:hover {
-  border-color: rgb(10, 141, 10);
-}
-
-.card img {
-  width: 200px;
-  border-radius: 35%;
-}
-
-.card h2, .project-links {
-  margin-top: 15px;
-}
-
-.project-links {
-  display: flex;
-  gap: 50px;
-}
-
-.project-links svg {
-  display: block;
-  width: 50px;
-}
-
-.project-links button {
-  background-color: #589957;
-  border: none;
-  cursor: pointer;
-}
-.project-links button:first-child {
-  border-radius: 12px;
-}
-.project-links button:last-child {
-  border-radius: 25px;
 }
 
 /* Contact.jsx */
