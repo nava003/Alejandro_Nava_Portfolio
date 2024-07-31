@@ -11,11 +11,11 @@ function Projects() {
       <div id="card-group">
         <div id="group-one" className="project-cards">
           <div className="card">
-            <img src="/HobbyHouseIcon.jpeg" alt="Image of Hobby_House_Icon" />
+            <img src="/HobbyHouseIcon.jpeg" alt="Image of The Hobby House Icon" />
             <h2>Hobby House</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/The_Hobby_House')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://the-hobby-house.onrender.com')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A pseudo social media website for hobbyists to converse and share experiences
@@ -28,11 +28,11 @@ function Projects() {
           </div>
 
           <div className="card">
-            <img src="/BookSearchEngine.jpg" alt="Image of Book_Search_Engine" />
+            <img src="/BookSearchEngine.jpg" alt="Image of Book Search Engine" />
             <h2>Book Search</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/Book_Search_Engine')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('https://adnbooksearchengine.netlify.app')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://book-search-engine-xhpj.onrender.com')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A website built to google search books based on series title or genre, and
@@ -44,11 +44,11 @@ function Projects() {
           </div>
 
           <div className="card">
-            <img src="/NoteTakerApp.jpg" alt="Image of Note_Taker_App" />
+            <img src="/NoteTakerApp.jpg" alt="Image of Note Taker App" />
             <h2>Note Taker</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/Note_Taker')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://note-taker-c1yd.onrender.com')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A note-taking web application capable of accepting user text and saving it
@@ -65,8 +65,8 @@ function Projects() {
             <img src="/plant-leaf.svg" alt="SVG icon image of a plant." />
             <h2>Green Thumb Guide</h2>
             <div className="project-links">
-              <button title="Github Repo" onClick={() => openInNewTab('https://github.com/SherryK1103/Green-Thumb-Guide')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/GreenThumbGuide')}><Githubiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://green-thumb-guide.onrender.com')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A conceptual informational website that informs the user on how to take care
@@ -83,7 +83,7 @@ function Projects() {
             <h2>Work Day Scheduler</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/Work_Day_Scheduler')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://nava003.github.io/Work_Day_Scheduler/')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A scheduler app to remind the user on the tasks they perform daily.<br/><br/>
@@ -98,7 +98,7 @@ function Projects() {
             <h2>Artist Lookup</h2>
             <div className="project-links">
               <button title="Github Repo" onClick={() => openInNewTab('https://github.com/nava003/Artist_Lookup')}><Githubiconsvg/></button>
-              <button title="Demo Link" onClick={() => openInNewTab('')}><Demoiconsvg/></button>
+              <button title="Demo Link" onClick={() => openInNewTab('https://nava003.github.io/Artist_Lookup/')}><Demoiconsvg/></button>
             </div>
             <span className="tooltip-text">
               A simple application displaying a wiki biography, albums, and a randomized GIF
