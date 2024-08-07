@@ -20,7 +20,7 @@ function Header() {
         <span>Click My Face</span>
         <div className={`imageCard ${flip ? "showImg" : "showSvg"}`}>
           <img src="/portfolio-face.jpg" alt="Photo of me, Alejandro"/>
-          <div onClick={() => openInNewTab('https://docs.google.com/document/d/1AY3qnQXK78fvNE0Zxf7L5-eNvafmp7HF/edit?usp=sharing&ouid=117446421694413359869&rtpof=true&sd=true')}><Resumesvg/></div>
+          <div onClick={() => openInNewTab('https://docs.google.com/document/d/1AY3qnQXK78fvNE0Zxf7L5-eNvafmp7HF/export?format=pdf')}><Resumesvg/></div>
         </div>
         <span>For My Resume!</span>
       </div>
