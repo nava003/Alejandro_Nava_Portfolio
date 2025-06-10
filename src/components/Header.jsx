@@ -29,7 +29,10 @@ function Header() {
         <span>For My Resume!</span>
       </div>
       
-      <h1>FULLSTACK DEVELOPER</h1>
+      <div id="home-roles">
+        <h1>FULLSTACK DEVELOPER</h1>
+        <h1>CYBERSECURITY GRADUATE</h1>
+      </div>
     </header>
   )
 }
