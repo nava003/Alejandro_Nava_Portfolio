@@ -20,7 +20,11 @@ function Header() {
         <span>Click My Face</span>
         <div className={`imageCard ${flip ? "showImg" : "showSvg"}`}>
           <img src="/portfolio-face.jpg" alt="Photo of me, Alejandro"/>
-          <div onClick={() => openInNewTab('https://docs.google.com/document/d/1G1k_3Efuu5IDSrD5RKJ1u0Z1nJ8jsQlr/export?format=pdf')}><Resumesvg/></div>
+          <div className="svg-wrapper" onClick={(e) => {
+            e.stopPropagation();
+            openInNewTab('/AlexNavaResume.pdf');
+            setFlip(true);
+          }}><Resumesvg/></div>
         </div>
         <span>For My Resume!</span>
       </div>
