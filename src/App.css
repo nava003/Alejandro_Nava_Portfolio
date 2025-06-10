@@ -69,9 +69,33 @@ p {
   height: 162px;
   width: 130px;
   position: relative;
-  transition: transform 300ms;
+  transition: transform 600ms;
   transform-style: preserve-3d;
+  transform: rotateY(0deg);
   cursor: pointer;
+}
+
+.imageCard img, .imageCard .svg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.imageCard img {
+  z-index: 2;
+  border-radius: 37%;
+}
+
+.imageCard .svg-wrapper {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .showImg {
@@ -80,28 +104,6 @@ p {
 
 .showSvg {
   transform: rotateY(180deg);
-}
-
-.imageCard img, .imageCard svg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.imageCard img {
-  border-radius: 37%;
-}
-
-.imageCard svg {
-  display: none;
-  transform: rotateY(180deg);
-}
-
-.showSvg svg {
-  display: block;
-}
-.showSvg img {
-  backface-visibility: hidden;
 }
 
 /* Projects.jsx CSS */
